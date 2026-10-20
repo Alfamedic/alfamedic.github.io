@@ -1,223 +1,402 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Ambulancia particular en Concepción, Talcahuano, Chillán y Los Ángeles. Cobertura de eventos, traslado de pacientes y faenas, 24/7. Cotiza por WhatsApp." />
-        <meta name="author" content=" Ambulancias AlfaMedic" />
-        <title>Ambulancia particular en Concepción 24/7 · Eventos, traslados y faenas | AlfaMedic</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Custom Google font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column h-100">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Ambulancias AlfaMedic</span></a>
-                   <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>-->
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <!--<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>-->
-                        </ul>
-                    </div>
-                </div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ambulancia particular 24/7 en Concepción, Biobío y Ñuble · Eventos, traslados y faenas | AlfaMedic</title>
+    <meta name="description" content="Ambulancia particular 24/7 en todas las comunas de las regiones del Biobío y Ñuble, desde Concepción. Eventos, traslado de pacientes y faenas. Cotiza por WhatsApp." />
+    <link rel="canonical" href="https://ambulanciasalfamedic.cl/" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- Vista previa al compartir en WhatsApp / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ambulancias AlfaMedic · Concepción" />
+    <meta property="og:description" content="Ambulancia particular 24/7: eventos, traslado de pacientes y faenas en Biobío y Ñuble." />
+    <meta property="og:url" content="https://ambulanciasalfamedic.cl/" />
+    <meta property="og:image" content="https://ambulanciasalfamedic.cl/assets/ambulancia.png" />
+    <meta property="og:locale" content="es_CL" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;1,700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Ambulancias AlfaMedic",
+        "description": "Servicio de ambulancia particular: cobertura de eventos, traslado de pacientes y faenas, 24 horas.",
+        "url": "https://ambulanciasalfamedic.cl/",
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+        },
+        "image": "https://ambulanciasalfamedic.cl/assets/ambulancia.png",
+        "email": "ambulancia.alfamedic@gmail.com",
+        "telephone": ["+56994457741", "+56974387387"],
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "O'Higgins 77",
+            "addressLocality": "Concepción",
+            "addressRegion": "Biobío",
+            "addressCountry": "CL"
+        },
+        "areaServed": [
+            { "@type": "AdministrativeArea", "name": "Región del Biobío" },
+            { "@type": "AdministrativeArea", "name": "Región de Ñuble" }
+        ],
+        "sameAs": [
+            "https://www.instagram.com/ambulanciasalfamedic/",
+            "https://es-la.facebook.com/people/Ambulancia-Alfamedic/100063543554727/"
+        ]
+    }
+    </script>
+
+    <style>
+        /* Paleta tomada de la ambulancia: carrocería blanca, letras rojas,
+           estrella de la vida azul y franja lateral gris oscuro. */
+        :root {
+            --carroceria: #ffffff;
+            --rojo: #d9261c;
+            --rojo-oscuro: #b51d15;
+            --azul: #1d4f9c;
+            --franja: #2a2f35;
+            --panel: #eef1f4;
+            --texto: #2a2f35;
+            --suave: #5d6670;
+            --linea: #d5dae0;
+            --wa: #1fa855;
+            --max: 1160px;
+            --display: "Barlow Condensed", "Arial Narrow", sans-serif;
+            --body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            font-family: var(--body);
+            font-size: 17px;
+            line-height: 1.55;
+            color: var(--texto);
+            background: var(--carroceria);
+            -webkit-font-smoothing: antialiased;
+        }
+        img { max-width: 100%; display: block; }
+        a { color: inherit; }
+        :focus-visible { outline: 3px solid var(--azul); outline-offset: 3px; border-radius: 4px; }
+        .wrap { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+
+        h1, h2, h3 { font-family: var(--display); font-weight: 700; margin: 0; letter-spacing: -.005em; }
+        h2 { font-size: clamp(34px, 4.4vw, 48px); line-height: 1.02; }
+        p { margin: 0; }
+
+        /* Botones */
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+            min-height: 50px; padding: 0 22px; border-radius: 6px;
+            font-family: var(--body); font-weight: 600; font-size: 16px; text-decoration: none;
+            border: 2px solid transparent; transition: background .15s, border-color .15s;
+        }
+        .btn i { font-size: 19px; }
+        .btn-rojo { background: var(--rojo); color: #fff; }
+        .btn-rojo:hover { background: var(--rojo-oscuro); }
+        .btn-borde { border-color: var(--linea); color: var(--texto); }
+        .btn-borde:hover { border-color: var(--texto); }
+
+        /* Barra de luces: un destello rojo/azul al cargar la página */
+        .balizas { height: 6px; display: flex; }
+        .balizas span { flex: 1; }
+        .balizas span:first-child { background: var(--rojo); }
+        .balizas span:last-child { background: var(--azul); }
+        @media (prefers-reduced-motion: no-preference) {
+            .balizas span:first-child { animation: destello 1.2s steps(1) 2; }
+            .balizas span:last-child { animation: destello 1.2s steps(1) .6s 2 both; }
+            @keyframes destello { 0% { opacity: .15; } 50% { opacity: 1; } }
+        }
+
+        /* Encabezado */
+        header.top { border-bottom: 1px solid var(--linea); background: var(--carroceria); }
+        .top .wrap { display: flex; align-items: center; justify-content: space-between; height: 72px; gap: 16px; }
+        .marca { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+        .marca-cruz {
+            position: relative; width: 30px; height: 30px; border-radius: 50%;
+            border: 3px solid var(--rojo); flex: none;
+        }
+        .marca-cruz::before, .marca-cruz::after { content: ""; position: absolute; inset: 0; margin: auto; background: var(--rojo); }
+        .marca-cruz::before { width: 14px; height: 4px; }
+        .marca-cruz::after { width: 4px; height: 14px; }
+        .marca strong { font-family: var(--display); font-size: 24px; font-weight: 700; font-style: italic; color: var(--rojo); line-height: 1; }
+        .marca small { display: block; font-size: 13px; color: var(--suave); font-weight: 500; line-height: 1.2; }
+        nav.links { display: flex; align-items: center; gap: 28px; font-size: 16px; }
+        nav.links a { text-decoration: none; color: var(--suave); font-weight: 500; }
+        nav.links a:hover { color: var(--texto); }
+        nav.links .btn { min-height: 42px; padding: 0 18px; color: #fff; }
+
+        /* Portada: el número pintado en el costado de la ambulancia */
+        .portada { border-bottom: 3px solid var(--franja); overflow: hidden; }
+        .portada .wrap { display: grid; grid-template-columns: 1fr 1.05fr; gap: 32px; align-items: end; }
+        .portada-texto { padding: 72px 0 64px; }
+        h1 { font-size: clamp(44px, 6.2vw, 76px); line-height: .95; color: var(--texto); }
+        .bajada { margin-top: 20px; font-size: 19px; color: var(--suave); max-width: 30em; }
+        .numero { margin-top: 36px; }
+        .numero span { display: block; font-weight: 600; color: var(--azul); font-size: 16px; }
+        .numero a {
+            display: inline-block; text-decoration: none; color: var(--azul);
+            font-family: var(--display); font-style: italic; font-weight: 700;
+            font-size: clamp(46px, 6.6vw, 84px); line-height: 1; letter-spacing: -.01em;
+            font-variant-numeric: lining-nums;
+        }
+        .numero a:hover { color: var(--rojo); }
+        .acciones { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+        /* La ambulancia se apoya sobre un andén gris que sale por la derecha y
+           termina en la franja inferior de la portada. */
+        .portada-foto { position: relative; align-self: end; padding: 48px 0 10px 4%; }
+        .portada-foto::before {
+            content: ""; position: absolute; left: 0; right: -100vw; top: 34%; bottom: 0;
+            background: var(--panel); border-radius: 20px 0 0 0;
+        }
+        /* ambulancia.png mide 800×1076 y el vehículo ocupa solo y = 338–868.
+           Se descarta el transparente sin tocar el vehículo: el alto del recorte
+           (330→874) va en aspect-ratio y el desplazamiento en margin-top
+           (un % de margin se calcula sobre el ancho: 330 / 800 = 41.25%). */
+        .recorte { position: relative; z-index: 1; display: block; aspect-ratio: 800 / 544; overflow: hidden; }
+        .recorte img { width: 100%; height: auto; margin-top: -41.25%; }
+        /* Sombra de contacto bajo las ruedas, para que no parezca flotando */
+        .portada-foto::after {
+            content: ""; position: absolute; left: 9%; right: 3%; bottom: 4px; height: 26px;
+            background: radial-gradient(closest-side, rgba(42,47,53,.38), rgba(42,47,53,0));
+        }
+
+        /* Secciones */
+        section.bloque { padding: 96px 0; }
+        .titulo { max-width: 34em; margin-bottom: 48px; }
+        .titulo p { margin-top: 14px; color: var(--suave); font-size: 18px; }
+
+        /* Servicios: filas, no tarjetas */
+        .servicios { list-style: none; margin: 0; padding: 0; border-top: 3px solid var(--franja); }
+        .servicios li {
+            display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 32px;
+            padding: 28px 0; border-bottom: 1px solid var(--linea); align-items: baseline;
+        }
+        .servicios h3 { font-size: clamp(28px, 3vw, 36px); line-height: 1.05; font-weight: 600; }
+        .servicios p { color: var(--suave); max-width: 34em; }
+
+        /* Cómo funciona: es una secuencia real, por eso lleva números */
+        .pasos-fondo { background: var(--panel); }
+        .pasos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+        .pasos li { display: grid; grid-template-columns: auto 1fr; gap: 0 18px; }
+        .pasos b {
+            grid-row: span 2; font-family: var(--display); font-style: italic; font-weight: 700;
+            font-size: 72px; line-height: .8; color: var(--azul);
+        }
+        .pasos h3 { font-size: 26px; line-height: 1.1; font-weight: 600; }
+        .pasos p { margin-top: 6px; color: var(--suave); }
+
+        /* Cobertura */
+        .cobertura { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+        .regiones { display: grid; gap: 28px; }
+        .region { border-left: 3px solid var(--rojo); padding-left: 20px; }
+        .region small { display: block; color: var(--suave); font-size: 15px; font-weight: 500; }
+        .region strong { display: block; font-family: var(--display); font-size: 30px; font-weight: 600; line-height: 1.15; }
+        .region p { margin-top: 4px; color: var(--suave); }
+
+        /* Contacto: franja oscura como la de la carrocería */
+        .contacto { background: var(--franja); color: #fff; padding: 88px 0 0; }
+        .contacto > .wrap { display: grid; grid-template-columns: 1fr 1.1fr; gap: 56px; }
+        .contacto h2 { color: #fff; }
+        .contacto .intro p { margin-top: 14px; color: #c3c9d1; font-size: 18px; max-width: 26em; }
+        .canales { list-style: none; margin: 0; padding: 0; }
+        .canales li + li { border-top: 1px solid rgba(255,255,255,.16); }
+        .canales a, .canales div {
+            display: flex; align-items: center; gap: 16px; padding: 18px 0;
+            text-decoration: none; color: #fff;
+        }
+        .canales i { font-size: 22px; width: 26px; text-align: center; color: #c3c9d1; flex: none; }
+        .canales .wa i { color: #5fd38d; }
+        .canales .dato { font-family: var(--display); font-weight: 600; font-size: 30px; line-height: 1.1; overflow-wrap: anywhere; }
+        .canales .dato.chico { font-size: 22px; }
+        .canales small { display: block; font-family: var(--body); font-size: 14px; font-weight: 500; color: #c3c9d1; }
+        .canales a:hover .dato { text-decoration: underline; text-underline-offset: 4px; }
+
+        footer { border-top: 1px solid rgba(255,255,255,.16); margin-top: 72px; padding: 28px 0; color: #c3c9d1; font-size: 15px; }
+        footer .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+        .social { display: flex; gap: 18px; font-size: 22px; }
+        .social a { color: #c3c9d1; }
+        .social a:hover { color: #fff; }
+
+        /* Botón flotante de WhatsApp (solo móvil) */
+        .wa-float {
+            display: none; position: fixed; right: 16px; bottom: 16px; z-index: 20;
+            width: 58px; height: 58px; border-radius: 50%; background: var(--wa); color: #fff;
+            place-items: center; font-size: 28px; box-shadow: 0 6px 18px rgba(42,47,53,.3);
+        }
+
+        @media (max-width: 900px) {
+            .portada .wrap, .cobertura, .contacto > .wrap { grid-template-columns: 1fr; gap: 0; }
+            .portada-texto { padding: 44px 0 8px; }
+            .portada-foto { padding: 36px 0 10px; width: 100%; max-width: 560px; margin-left: auto; }
+            .servicios li { grid-template-columns: 1fr; gap: 8px; }
+            .pasos { grid-template-columns: 1fr; gap: 32px; }
+            .cobertura { gap: 36px; }
+            .contacto > .wrap { gap: 36px; }
+            section.bloque { padding: 64px 0; }
+            .contacto { padding-top: 64px; }
+            footer { margin-top: 48px; }
+            nav.links a:not(.btn) { display: none; }
+            .wa-float { display: grid; }
+        }
+        @media (max-width: 480px) {
+            body { font-size: 16px; }
+            .wrap { padding: 0 16px; }
+            .acciones .btn { flex: 1 1 100%; }
+            .marca small { display: none; }
+            .canales .dato { font-size: 26px; }
+            .canales .dato.chico { font-size: 19px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="balizas" aria-hidden="true"><span></span><span></span></div>
+    <header class="top">
+        <div class="wrap">
+            <a class="marca" href="#">
+                <span class="marca-cruz" aria-hidden="true"></span>
+                <span><strong>AlfaMedic</strong><small>Ambulancias en Biobío y Ñuble</small></span>
+            </a>
+            <nav class="links">
+                <a href="#servicios">Servicios</a>
+                <a href="#como-funciona">Cómo funciona</a>
+                <a href="#cobertura">Cobertura</a>
+                <a class="btn btn-rojo" href="#contacto">Cotizar</a>
             </nav>
-            <!-- Header-->
-            <header class="py-5">
-                <div class="container px-5 pb-5">
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-xxl-5">
-                            <!-- Header text content-->
-                            <div class="text-center text-xxl-start">
-                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Seguridad &middot; Emergencia &middot; Atención Médica</div></div>
-                                <div class="fs-3 fw-light text-muted">¿Tienes un evento y necesitas ambulancia?</div>
-                                <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">¡Contáctanos! Ambulancias AlfaMedic</span></h1>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                    <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="https://wa.me/56994457741"><i class="bi bi-whatsapp"></i> Whatsapp 1</a>
-									<a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="https://wa.me/56974387387"><i class="bi bi-whatsapp"></i> Whatsapp 2</a>
-                                </div>
-								<div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-									<a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="mailto:ambulancia.alfamedic@gmail.com"><i class="bi bi-envelope"></i> Mail</a>
-                                    <!-- <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>-->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-7">
-                            <!-- Header profile picture-->
-                            <div class="d-flex justify-content-center mt-5 mt-xxl-0">
-                                <div class="profile bg-gradient-primary-to-secondary">
-                                    <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
-                                    <!-- Watch a tutorial on how to do this on YouTube (link)-->
-                                    <img class="profile-img" src="assets/ambulancia.png" alt="Ambulancia de AlfaMedic" />
-                                    <div class="dots-1">
-                                        <!-- SVG Dots-->
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4" xml:space="preserve">
-                                            <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
-                                                <path d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z"></path>
-                                                <path d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z"></path>
-                                                <path d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z"></path>
-                                                <path d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z"></path>
-                                                <path d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z"></path>
-                                                <path d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z"></path>
-                                                <path d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z"></path>
-                                                <path d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z"></path>
-                                                <path d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z"></path>
-                                                <path d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z"></path>
-                                                <path d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z"></path>
-                                                <path d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z"></path>
-                                                <path d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z"></path>
-                                                <path d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z"></path>
-                                                <path d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z"></path>
-                                                <path d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z"></path>
-                                                <path d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z"></path>
-                                                <path d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z"></path>
-                                                <path d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z"></path>
-                                                <path d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z"></path>
-                                            </g>
-                                        </svg>
-                                        <!-- END of SVG dots-->
-                                    </div>
-                                    <div class="dots-2">
-                                        <!-- SVG Dots-->
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4" xml:space="preserve">
-                                            <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
-                                                <path d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z"></path>
-                                                <path d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z"></path>
-                                                <path d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z"></path>
-                                                <path d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z"></path>
-                                                <path d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z"></path>
-                                                <path d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z"></path>
-                                                <path d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z"></path>
-                                                <path d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z"></path>
-                                                <path d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z"></path>
-                                                <path d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z"></path>
-                                                <path d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z"></path>
-                                                <path d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z"></path>
-                                                <path d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z"></path>
-                                                <path d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z"></path>
-                                                <path d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z"></path>
-                                                <path d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z"></path>
-                                                <path d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z"></path>
-                                                <path d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z"></path>
-                                                <path d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z"></path>
-                                                <path d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z"></path>
-                                            </g>
-                                        </svg>
-                                        <!-- END of SVG dots-->
-                                    </div>
-                                    <div class="dots-3">
-                                        <!-- SVG Dots-->
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4" xml:space="preserve">
-                                            <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
-                                                <path d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z"></path>
-                                                <path d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z"></path>
-                                                <path d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z"></path>
-                                                <path d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z"></path>
-                                                <path d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z"></path>
-                                                <path d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z"></path>
-                                                <path d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z"></path>
-                                                <path d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z"></path>
-                                                <path d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z"></path>
-                                                <path d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z"></path>
-                                                <path d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z"></path>
-                                                <path d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z"></path>
-                                                <path d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z"></path>
-                                                <path d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z"></path>
-                                                <path d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z"></path>
-                                                <path d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z"></path>
-                                                <path d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z"></path>
-                                                <path d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z"></path>
-                                                <path d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z"></path>
-                                                <path d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z"></path>
-                                            </g>
-                                        </svg>
-                                        <!-- END of SVG dots-->
-                                    </div>
-                                    <div class="dots-4">
-                                        <!-- SVG Dots-->
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4" xml:space="preserve">
-                                            <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
-                                                <path d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z"></path>
-                                                <path d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z"></path>
-                                                <path d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z"></path>
-                                                <path d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z"></path>
-                                                <path d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z"></path>
-                                                <path d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z"></path>
-                                                <path d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z"></path>
-                                                <path d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z"></path>
-                                                <path d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z"></path>
-                                                <path d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z"></path>
-                                                <path d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z"></path>
-                                                <path d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z"></path>
-                                                <path d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z"></path>
-                                                <path d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z"></path>
-                                                <path d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z"></path>
-                                                <path d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z"></path>
-                                                <path d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z"></path>
-                                                <path d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z"></path>
-                                                <path d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z"></path>
-                                                <path d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z"></path>
-                                            </g>
-                                        </svg>
-                                        <!-- END of SVG dots-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="portada">
+            <div class="wrap">
+                <div class="portada-texto">
+                    <h1>Ambulancia particular en Concepción</h1>
+                    <p class="bajada">Eventos, traslado de pacientes y faenas en todas las comunas de Biobío y Ñuble. Ambulancia equipada y personal de salud, las 24 horas.</p>
+                    <p class="numero">
+                        <span>Servicio particular, todos los días</span>
+                        <a href="https://wa.me/56994457741?text=Hola%2C%20quiero%20cotizar%20un%20servicio%20de%20ambulancia" aria-label="Escribir por WhatsApp al +56 9 9445 7741">+56 9 9445 7741</a>
+                    </p>
+                    <div class="acciones">
+                        <a class="btn btn-rojo" href="https://wa.me/56994457741?text=Hola%2C%20quiero%20cotizar%20un%20servicio%20de%20ambulancia">
+                            <i class="bi bi-whatsapp"></i> Cotizar por WhatsApp
+                        </a>
+                        <a class="btn btn-borde" href="mailto:ambulancia.alfamedic@gmail.com">
+                            <i class="bi bi-envelope"></i> Escribir un correo
+                        </a>
                     </div>
                 </div>
-            </header>
-            <!-- About Section-->
-            <section class="bg-light py-5">
-                <div class="container px-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-xxl-8">
-                            <div class="text-center my-5">
-                                <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Sobre Nosotros</span></h2>
-                                <p class="lead fw-light mb-4">Ambulancias AlfaMedic Concepción</p>
-                                <p class="text-muted">Somos un servicio el cual ayudamos a que garantice la seguridad de su evento con nuestro servicio profesional de ambulancia. Contamos con personal médico altamente capacitado, ambulancias equipadas con tecnología avanzada y suministros médicos completos. Nuestro objetivo es proporcionar una atención médica rápida y eficiente en caso de emergencia, asegurando el bienestar de sus asistentes en todo momento</p>
-                                <div class="d-flex justify-content-center fs-2 gap-4">
-                                    <a class="text-gradient" href="https://www.instagram.com/ambulanciasalfamedic/"><i class="bi bi-instagram"></i></a>
-                                    <a class="text-gradient" href="https://cl.linkedin.com/in/hern%C3%A1n-cancino-merino-531b9366"><i class="bi bi-linkedin"></i></a>
-                                    <a class="text-gradient" href="https://es-la.facebook.com/people/Ambulancia-Alfamedic/100063543554727/"><i class="bi bi-facebook"></i></a>
-                                </div>
-								<p class="text-muted">O 'Higgins 77 - Concepción</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Ambulancias AlfaMedic 2026</div></div>
-                    <!--<div class="col-auto">
-                        <a class="small" href="#!">Privacy</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Terms</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Contact</a>
-                    </div>-->
+                <div class="portada-foto">
+                    <span class="recorte"><img src="assets/ambulancia.png" alt="Ambulancia de AlfaMedic, con el número de contacto pintado en el costado" width="800" height="1076" /></span>
                 </div>
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+        </section>
+
+        <section class="bloque" id="servicios">
+            <div class="wrap">
+                <div class="titulo">
+                    <h2>Qué cubrimos</h2>
+                    <p>Ambulancia y personal de salud para un evento, un traslado o una faena.</p>
+                </div>
+                <ul class="servicios">
+                    <li>
+                        <h3>Ambulancia para eventos</h3>
+                        <p>Eventos deportivos, conciertos, ferias, actividades de empresa y celebraciones privadas. La ambulancia queda en el lugar mientras dura el evento.</p>
+                    </li>
+                    <li>
+                        <h3>Traslado de pacientes</h3>
+                        <p>Traslados programados entre domicilio, clínicas y hospitales, con personal de salud a bordo.</p>
+                    </li>
+                    <li>
+                        <h3>Cobertura de faenas</h3>
+                        <p>Ambulancia y personal en obras, faenas y actividades industriales, por jornada o por turno.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="bloque pasos-fondo" id="como-funciona">
+            <div class="wrap">
+                <div class="titulo">
+                    <h2>Cómo contratar</h2>
+                </div>
+                <ol class="pasos">
+                    <li>
+                        <b aria-hidden="true">1</b>
+                        <h3>Cuéntanos qué necesitas</h3>
+                        <p>Tipo de servicio, fecha, lugar y duración.</p>
+                    </li>
+                    <li>
+                        <b aria-hidden="true">2</b>
+                        <h3>Recibe la cotización</h3>
+                        <p>Te proponemos la cobertura adecuada para tu caso.</p>
+                    </li>
+                    <li>
+                        <b aria-hidden="true">3</b>
+                        <h3>Llegamos al lugar</h3>
+                        <p>Con la ambulancia y el equipo listos a la hora acordada.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="bloque" id="cobertura">
+            <div class="wrap cobertura">
+                <div class="titulo" style="margin-bottom:0">
+                    <h2>Cubrimos todo Biobío y Ñuble</h2>
+                    <p>Salimos desde O'Higgins 77, Concepción, y llegamos a cualquier comuna de las dos regiones.</p>
+                </div>
+                <div class="regiones">
+                    <div class="region">
+                        <small>Región del Biobío</small>
+                        <strong>Toda la región</strong>
+                        <p>Concepción, Talcahuano, San Pedro de la Paz, Coronel, Los Ángeles y el resto de sus comunas.</p>
+                    </div>
+                    <div class="region">
+                        <small>Región de Ñuble</small>
+                        <strong>Toda la región</strong>
+                        <p>Chillán, Chillán Viejo, San Carlos, Bulnes y el resto de sus comunas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacto" id="contacto">
+            <div class="wrap">
+                <div class="intro">
+                    <h2>¿Necesitas una ambulancia?</h2>
+                    <p>Escríbenos por WhatsApp o correo a cualquier hora y te respondemos con una cotización.</p>
+                </div>
+                <ul class="canales">
+                    <li><a class="wa" href="https://wa.me/56994457741"><i class="bi bi-whatsapp"></i><span class="dato">+56 9 9445 7741<small>WhatsApp</small></span></a></li>
+                    <li><a class="wa" href="https://wa.me/56974387387"><i class="bi bi-whatsapp"></i><span class="dato">+56 9 7438 7387<small>WhatsApp</small></span></a></li>
+                    <li><a href="mailto:ambulancia.alfamedic@gmail.com"><i class="bi bi-envelope"></i><span class="dato chico">ambulancia.alfamedic@gmail.com<small>Correo</small></span></a></li>
+                    <li><div><i class="bi bi-geo-alt"></i><span class="dato chico">O'Higgins 77, Concepción<small>Dirección</small></span></div></li>
+                </ul>
+            </div>
+            <footer>
+                <div class="wrap">
+                    <div>© <span id="year">2026</span> Ambulancias AlfaMedic, Concepción, Chile</div>
+                    <div class="social">
+                        <a href="https://www.instagram.com/ambulanciasalfamedic/" aria-label="Instagram de AlfaMedic"><i class="bi bi-instagram"></i></a>
+                        <a href="https://es-la.facebook.com/people/Ambulancia-Alfamedic/100063543554727/" aria-label="Facebook de AlfaMedic"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <a class="wa-float" href="https://wa.me/56994457741?text=Hola%2C%20quiero%20cotizar%20un%20servicio%20de%20ambulancia" aria-label="Escribir por WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
 </html>
